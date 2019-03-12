@@ -1,0 +1,323 @@
+ 
+body {
+	background-color: #fff;
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+}
+.container {
+    height: 100%;
+}
+.vline {
+    width: 40%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#ed145b;
+}
+.btn-primary.rounded-pill {
+    background-color: #ed145b;
+    border: none;
+    width: 10em;
+    border: 2px solid #ed145b;
+}
+
+.btn-primary.rounded-pill:hover {
+    background-color: transparent;
+    border: 2px solid #ed145b;
+    color: #ed145b;
+}
+ /* header section */
+ header {
+     background: url('./images/header.png');
+     min-height: 100vh;
+     position: relative;
+     z-index: 2;
+ }
+ header .navbar .navbar-nav .nav-item .nav-link {
+     color: white;
+     font-size: 15px;
+     font-weight: bold;
+ } 
+
+ header .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #ed145b;
+} 
+header .content {
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+header .content button{
+   
+}
+header .content button:hover{
+   
+}
+
+/* about section */
+.about {
+    /* margin: 15vh auto; */
+    position: relative;
+    min-height: 90vh;
+    z-index: 1;
+}
+
+.about .shape {
+    background-color: #ed145b;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 10vh;
+    transform: rotate(-1.5deg);
+    
+
+}
+
+.about .textAbout a {
+    color: #ed145b;
+    
+}
+.about .textAbout a:hover {
+    /* text-decoration: none; */
+}
+
+.about .textAbout a:hover .far{
+    animation: myAnim 0.8s infinite;
+}
+
+@keyframes myAnim {
+   0% {
+       transform: scale(1);
+   }
+   50% {
+       transform: scale(1.2);
+   }
+   100% {
+       transform: scale(1);
+   }
+}
+.about .laptop{
+    transform: scale(1.5);
+    padding-top: 15vh;
+}
+
+.about .textAbout a .far {
+    font-size: 1.5rem;
+}
+
+/* our services section */
+.services {
+}
+
+.services .icons .icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 130px;
+    height: 130px;
+}
+
+.services .icons .icon:hover {
+    border: 1px solid #ed145b !important;
+    animation: myAnim 0.8s 1;
+}
+.services .icons h6 {
+    color: #ed145b;
+    padding-top: 2em;
+}
+.services .icons .iconEditable{
+    background-image: url('./images/icon_editable.png');
+   
+}
+
+.services .icons .iconBasket{
+    background-image: url('./images/icon_bascet.png');
+}
+
+.services .icons .iconPaint{
+    background-image: url('./images/icon_paint.png');
+}
+
+.services .icons .iconPhone{
+    background-image: url('./images/icon_phone.png');
+}
+
+/* quotation section */
+
+.quota .jumbotron {
+    background: url('./images/jumbo.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+}
+/* rotation of dow quote */
+.quota .carousel .quoteDown {
+    transform: rotate(180deg);
+}
+
+/* prices section */
+.prices{
+    min-height: 100vh;
+}
+
+.prices .priceGrid .priceBox .priceHeader h6{
+    line-height: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.prices .priceGrid .priceBox .btn-light{
+    position: relative;
+    width: 10em;
+    background-color: #f4f4f4;
+    top: 1em;
+    opacity: 1;
+}
+
+.prices .priceGrid .priceBox ul {
+    list-style: none;
+}
+.prices .priceGrid .priceBox:hover .priceHeader{
+    background-color: #ed145b !important;
+}
+
+/* info section */
+
+.info {
+    padding: 10rem 1rem;
+}
+
+.info .infoItem h3 {
+    color: #ed145b;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/*  join section */
+
+.join {
+    background-color: #ed145b;
+    height: 8rem;
+}
+
+.join .container {
+    display: table;
+    width: 100%;
+}
+
+.join .joinBar {
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.join .joinBar p {
+    display: inline-block;
+}
+
+.join .joinBar button {
+    width: 10rem;
+    display: inline-block;
+    color: #ed145b;
+}
+/* lastest update section */
+.updates .container{
+    position: relative;
+    z-index: 3;
+}
+.updates .picture {
+    position: relative;
+    
+}
+
+.updates .picture .layerHover {
+    background-color: #ed145b;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: -5%;
+    transform: skewY(1.5deg);
+    z-index: 1;
+    opacity: 0.9;
+}
+.updates .updatesBody{
+    position: relative;
+    z-index: 2;
+}
+
+
+.updates  .layerHover{
+    
+}
+
+.updates .picture:hover .layerHover {
+    animation: pictAnim 1s 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes pictAnim {
+    0% {
+       height: 8%;
+    }
+    100% {
+        height: 100%;
+        bottom: 0;
+        transform: skewY(0deg);
+    }
+  }
+
+  .updates .picture .icon  {
+      display: table;
+      height: 100%;
+  }
+
+  .updates .picture .icon .fas {
+    display: table-cell; 
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+  }
+  .updates .updatesMore {
+      color: #ed145b;
+      font-size: 1.2rem;
+  }
+
+  .updates .updatesMore .link{
+    color: #ed145b;
+    text-decoration: none;
+}
+/*  more info section */
+
+.moreInfo .jumbotron {
+    background: url('./images/header.png');
+}
+
+/* footer */
+
+footer {
+    height: 15vh;
+}
+
+/*  media queries */
+@media (max-width: 768px) {
+.about .shape {
+    display: none;
+}
+
+.info .infoItem, .info .infoImg {
+    text-align: center;
+}
+}
+.updates .updatesHeader {
+    width: 100% !important; 
+}
+
+.updates .updatesBody {
+    height: 45%;
+}
+.moreInfo .container {
+    width: 100% !important;
+}
