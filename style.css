@@ -50,13 +50,6 @@ header .content {
     text-align: center;
 }
 
-header .content button{
-   
-}
-header .content button:hover{
-   
-}
-
 /* about section */
 .about {
     /* margin: 15vh auto; */
@@ -303,6 +296,20 @@ footer {
 
 /*  media queries */
 @media (max-width: 768px) {
+
+header {
+    min-height: 60vh;
+}
+
+.about {
+    min-height: 60vh !important;
+}
+
+.about .laptop{
+    transform: scale(1.0);
+}
+
+
 .about .shape {
     display: none;
 }
